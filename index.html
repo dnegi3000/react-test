@@ -9,16 +9,15 @@
     <script src="./js/react.js"></script>
     <script src="./js/react-dom.js"></script>
     <script src="./js/babel.min.js"></script>
-
-
 <!--    <script src="https://facebook.github.io/react/js/jsx.js"></script>
     -->
     
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/jsx">
-       class Hello extends React.Component {
+    
+    <script type="text/babel">
+
+      /*class Hello extends React.Component {
             render() {
               return <h1>Hello</h1>;
                     }
@@ -29,12 +28,13 @@
                                     {toWhat: 'World'}, 
                                     null),
                 document.getElementById('root')
-        );
-    
+        );  */
+   
+
 function tick() {
     const element = (
         <div>
-            <h1>Hello, world!t his is watch </h1>
+            <h1>watch </h1>
             <h2>It is {new Date().toLocaleTimeString()}.</h2>
         </div>
         );
@@ -46,13 +46,14 @@ function tick() {
 }
 setInterval(tick, 1000);
 
-ReactDOM.render(React.createElement('root',null,'Deepak NEGI'),);
+ReactDOM.render(React.createElement('root',null,'Deepak NEGI'),document.getElementById('root1'));
 
         
     
     </script>
 
-
+ <div id="root">   </div>
+ <div id="root1">   </div>
 
 </body>
 
